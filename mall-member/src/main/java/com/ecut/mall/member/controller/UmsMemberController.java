@@ -1,11 +1,10 @@
 package com.ecut.mall.member.controller;
 
-import com.ecut.mall.member.beans.UmsMember;
-import com.ecut.mall.member.beans.UmsMemberReceiveAddress;
-import com.ecut.mall.member.service.UmsMemberService;
+import com.ecut.mall.beans.UmsMember;
+import com.ecut.mall.beans.UmsMemberReceiveAddress;
+import com.ecut.mall.service.UmsMemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 

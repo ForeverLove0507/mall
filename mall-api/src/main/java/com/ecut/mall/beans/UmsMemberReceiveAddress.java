@@ -1,4 +1,4 @@
-package com.ecut.mall.member.beans;
+package com.ecut.mall.beans;
 
 import javax.persistence.Id;
 import java.io.Serializable;

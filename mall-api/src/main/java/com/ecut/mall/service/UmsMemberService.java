@@ -1,7 +1,7 @@
-package com.ecut.mall.member.service;
+package com.ecut.mall.service;
 
-import com.ecut.mall.member.beans.UmsMember;
-import com.ecut.mall.member.beans.UmsMemberReceiveAddress;
+import com.ecut.mall.beans.UmsMember;
+import com.ecut.mall.beans.UmsMemberReceiveAddress;
 
 
 import java.util.List;

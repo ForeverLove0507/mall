@@ -1,10 +1,12 @@
 package com.ecut.mall.member.service.impl;
 
-import com.ecut.mall.member.beans.UmsMember;
-import com.ecut.mall.member.beans.UmsMemberReceiveAddress;
+import com.ecut.mall.beans.UmsMember;
+import com.ecut.mall.beans.UmsMember;
+import com.ecut.mall.beans.UmsMemberReceiveAddress;
+import com.ecut.mall.beans.UmsMemberReceiveAddress;
 import com.ecut.mall.member.mapper.UmsMemberMapper;
 import com.ecut.mall.member.mapper.UmsMemberReceiveAddressMapper;
-import com.ecut.mall.member.service.UmsMemberService;
+import com.ecut.mall.service.UmsMemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
