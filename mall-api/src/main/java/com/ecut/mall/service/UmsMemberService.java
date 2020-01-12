@@ -8,6 +8,5 @@ import java.util.List;
 
 public interface UmsMemberService {
     List<UmsMember> getAllMembers();
-
     List<UmsMemberReceiveAddress> getReceiveAddressByMemberId(String memberId);
 }
