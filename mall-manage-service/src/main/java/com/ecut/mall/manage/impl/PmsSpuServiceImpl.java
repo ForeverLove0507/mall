@@ -90,4 +90,10 @@ public class PmsSpuServiceImpl implements PmsSpuService {
         List<PmsProductImage> pmsProductImages = pmsSpuImageMapper.select(pmsProductImage);
         return pmsProductImages;
     }
+
+    @Override
+    public List<PmsProductSaleAttr> spuSaleAttrListCheckBySku(String productId, String skuId) {
+        List<PmsProductSaleAttr> pmsProductSaleAttrs = pmsSpuSaleAttrMapper.selectSpuSaleAttrListCheckBySku(productId, skuId);
+        return pmsProductSaleAttrs;
+    }
 }
