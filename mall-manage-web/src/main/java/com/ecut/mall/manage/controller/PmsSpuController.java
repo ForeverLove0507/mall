@@ -5,19 +5,12 @@ import com.ecut.mall.beans.PmsBaseSaleAttr;
 import com.ecut.mall.beans.PmsProductImage;
 import com.ecut.mall.beans.PmsProductInfo;
 import com.ecut.mall.beans.PmsProductSaleAttr;
-import com.ecut.mall.manage.constant.Constant01;
 import com.ecut.mall.manage.utils.FastDFSUtil;
 import com.ecut.mall.service.PmsSpuService;
-import org.csource.common.MyException;
-import org.csource.fastdfs.ClientGlobal;
-import org.csource.fastdfs.StorageClient;
-import org.csource.fastdfs.TrackerClient;
-import org.csource.fastdfs.TrackerServer;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.IOException;
 import java.util.List;
 
 @Controller

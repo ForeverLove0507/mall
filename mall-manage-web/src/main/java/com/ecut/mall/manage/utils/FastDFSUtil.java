@@ -1,8 +1,6 @@
 package com.ecut.mall.manage.utils;
 
-import com.ecut.mall.manage.constant.Constant01;
-import com.ecut.mall.manage.controller.PmsSpuController;
-import org.csource.common.MyException;
+import com.ecut.mall.manage.constant.URLConstant;
 import org.csource.fastdfs.ClientGlobal;
 import org.csource.fastdfs.StorageClient;
 import org.csource.fastdfs.TrackerClient;
@@ -14,7 +12,7 @@ import java.io.IOException;
 public class FastDFSUtil {
     // 上传图片到服务器，并返回图片地址
     public static String UpLoadImg(MultipartFile multipartFile){
-        String imgUrl= Constant01.URL_VMware;
+        String imgUrl= URLConstant.URL_VMware;
         // 将图片上传到分布式文件系统
         // 配置fdfs的全局链接地址
         String tracker= FastDFSUtil.class.getResource("/tracker.conf").getPath();
