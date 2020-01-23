@@ -142,4 +142,20 @@ public class PmsSkuServiceImpl implements PmsSkuService {
         List<PmsSkuInfo> pmsSkuInfos = pmsSkuInfoMapper.selectSkuListBySpu(pmsSkuInfo);
         return pmsSkuInfos;
     }
+
+    @Override
+    public List<PmsSkuInfo> getAllSku(String catalog3Id) {
+        List<PmsSkuInfo> pmsSkuInfoList = pmsSkuInfoMapper.selectAll();
+        for (PmsSkuInfo pmsSkuInfo : pmsSkuInfoList) {
+            String skuId=pmsSkuInfo.getId();
+            PmsSkuAttrValue pmsSkuAttrValue=new PmsSkuAttrValue();
+            pmsSkuAttrValue.setSkuId(skuId);
+            List<PmsSkuAttrValue> select = pmsSkuAttrValueMapper.select(pmsSkuAttrValue);
+            pmsSkuInfo.setSkuAttrValueList(select);
+
+        }
+        return pmsSkuInfoList;
+    }
+
+
 }
