@@ -82,18 +82,18 @@ public class SearchServiceImpl implements SearchService {
         }
         // query
         searchSourceBuilder.query(boolQueryBuilder);
+        // highlight
+        HighlightBuilder highlightBuilder=new HighlightBuilder();
+        highlightBuilder.preTags("<span style='color:red'>");
+        highlightBuilder.field("skuName");
+        highlightBuilder.postTags("</span>");
+        searchSourceBuilder.highlight(highlightBuilder);
         // from
         searchSourceBuilder.from(0);
         // size
         searchSourceBuilder.size(20);
         // sort
         searchSourceBuilder.sort("price", SortOrder.DESC);
-        // highlight
-        HighlightBuilder highlightBuilder=new HighlightBuilder();
-        highlightBuilder.preTags("<span style='color:red'>");
-        highlightBuilder.field("skuName");
-        highlightBuilder.postTags("<span>");
-        searchSourceBuilder.highlight(highlightBuilder);
         return searchSourceBuilder.toString();
     }
 }

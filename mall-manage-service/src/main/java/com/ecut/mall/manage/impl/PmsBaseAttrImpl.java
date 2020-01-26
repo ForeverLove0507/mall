@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
+import java.util.Set;
 
 @Service
 public class PmsBaseAttrImpl implements PmsBaseAttrService {
@@ -74,5 +75,12 @@ public class PmsBaseAttrImpl implements PmsBaseAttrService {
             }
         }
         return "success";
+    }
+
+    @Override
+    public List<PmsBaseAttrInfo> getAttrValueListByValueId(Set<String> valueIdSet) {
+        String valueIdStr=StringUtils.join(valueIdSet,",");
+        List<PmsBaseAttrInfo> pmsBaseAttrInfos=pmsBaseAttrInfoMapper.selectAttrValueListByValueId(valueIdStr);
+        return pmsBaseAttrInfos;
     }
 }

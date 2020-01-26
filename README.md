@@ -9,7 +9,10 @@ mall-manage-service服务端口：8071
 mall-item-web服务端口：8082
 mall-item-service服务端口：8072 (无)
 
-mall-search-web服务端口：8083
-mall-search-service服务端口：8073
+mall-list-web服务端口：8083
+mall-list-service服务端口：8073
+
+mall-cart-web服务端口：8084
+mall-cart-service服务端口：8074
 
 
